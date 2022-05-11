@@ -1,0 +1,546 @@
+@font-face {
+    font-family: 'vice_city_sansregular';
+    src: url('font/Vicecitysans/vicecitysans-webfont.woff2') format('woff2'),
+         url('font/Vicecitysans/vicecitysans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0.1px 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'vice_city_sansregular';
+    
+}
+
+/*M*E*N*U**N*A*V*I*G*A*T*I*O*N*/
+
+#nav-bar{border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: 150px;
+}
+
+#nav-bar .logo{
+    font-size: 25px;
+}
+
+ul{
+     display: flex;
+     align-items: center;
+     font-size: 20px;
+}
+
+li{
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+li a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-btn{
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'vice_city_sansregular';
+    font-size: 18px;
+    background-color: red;    
+    width : 15%;
+}
+
+.btn-btn a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.btn{
+    border: 0;
+    font-family: 'vice_city_sansregular';
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.identify{
+    display: none;
+}
+
+.open{
+    display:none;
+    cursor: pointer;
+}
+
+.close{
+    display:none;
+    cursor: pointer;
+}
+
+
+/* Carte inscription et connexion utilisateur*/ 
+
+.cart-form{
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 500px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#formulaire input{
+    border: 1px solid rgb(139, 136, 136);
+    height: 40px;
+    width: 0%;
+}
+
+::placeholder{
+    padding-left: 10px;
+    font-size: medium;
+}
+
+#formulaire #type{
+    padding-left: 10px;
+    font-size: medium;
+}
+
+.cart-form form button{
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'vice_city_sansregular';
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(74, 76, 192);   
+    width : 50%;
+    border: 2px solid rgb(74, 76, 192);
+}
+
+.cart-form form button:hover{
+    background-color: rgb(74, 76, 192);
+    color: white;
+    border: 2px solid transparent;
+}
+
+.cart-form input{
+    border: 1px solid black;
+    width: 50%;
+    height: 30px;
+    border-radius: 20px;
+}
+
+
+
+/* ********* formulaire de location & modification********* */
+a{
+    text-decoration: none;
+}
+
+.container-form-annonce h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.container-form-annonce{
+   width: 1000px;
+   margin: auto;
+   border: 2px solid black;
+   padding: 15px;
+   border-radius: 20px;
+}
+
+.content-line{
+    display:flex;
+}
+
+.container-title{ 
+   width: 70%;
+   align-items: center;
+   border-right: 2px solid black;
+   padding-top: 20px;
+}
+
+.box{
+    display: flex;
+}
+
+.container{
+    margin-left: 8%;   
+    padding-top: 20px ;
+}
+
+.type2{
+    margin-left: 50px;
+}
+
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.container-end{
+    display: flex;
+}
+
+#container{
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+
+#container .btn-valid{
+    border: 2px solid red;
+    color: red;
+    border-radius: 30px;    
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+    margin-left: 50px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+#container .btn-valid:hover{
+    border: 2px solid transparent;
+    color: white;
+    background-color: red;
+}
+
+.text-answer{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.meuble{
+    display: flex;
+}
+#vide{
+    margin-left: 20%;
+}
+
+#number{
+    height: 30px;
+}
+
+.btn-valid a{
+    color:white;
+    text-decoration: none;
+}
+
+#description{
+    width: 80%;
+    height: 100px;
+}
+
+.container-form-annonce input{
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 2px;
+}
+
+/* LIST ANNONCE-pro */
+
+.info-user{
+    width: 30%;
+    margin-left: 60%;
+    position: fixed;
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: rgb(221, 241, 253);
+}
+
+.all-info{
+    display: flex;
+}
+
+.nav-pro{
+    margin-top: 100px;
+    margin-left: 20%;
+}
+
+.container-list
+{
+    width: 600px;
+    margin-left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border: 1px solid rgb(190, 190, 190);
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 20px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    align-items: end;
+}
+
+.piece{
+    display:flex;
+    width: 50%;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.prix{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.prix h3{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.prix p{
+    display: flex;
+    align-items: flex-end;
+}
+
+#annonce{
+    border: none;
+    border: 2px solid rgb(105, 114, 236);
+    border-radius: 30px;    
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    width: 150px;
+    margin-left: 10px;
+    margin-left: 10px;
+    color: rgb(43, 51, 172);
+}
+
+#annonce:hover{
+    background-color: rgb(105, 114, 236);
+    border: 2px solid transparent;
+}
+
+#button-pro{
+    color: rgb(105, 114, 236);;
+}
+
+#button-pro:hover{
+    color:white;
+}
+
+
+.validation{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+
+
+
+/* Les liens annonce-panier */
+.menu-annonce{
+    margin-top: 130px;
+}
+
+/* Toutes les annonces- listing  user*/
+
+#favori{
+    border:none;
+    color: grey;
+    display:flex;
+    justify-content: end;
+    margin-right: 12%;
+}
+
+#favori:hover{
+    color:yellow;
+}
+
+
+
+
+
+
+/*Menu-Nav-bar*/
+@media(max-width: 900px){ 
+    .cart-form{
+        width: 90%;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menuAppear li {
+        margin-top: 20px;
+    }
+
+    .menu-link-user{
+        display:none;
+    }
+
+    
+    .identify{
+        display: flex;
+        border: 1px solid black;
+        border-radius: 60px;
+        padding: 5px;
+        margin-left: 250px;
+    } 
+
+    .open{
+        display: block;
+    }
+
+
+    .menuAppear{background-color: bisque;
+        position: absolute;
+        margin-top: 945px;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 250px;
+    }
+
+    .btn-btn{
+        display:none;
+    }
+
+    .btn-btn1{
+        display: flex;
+    }
+
+    .btn-btn1 a{
+        color: white;
+    }
+
+    .closeIt{
+        display: none;
+    }
+
+    .openIt{
+        display : block;
+    }
+
+    
+    .remove{
+        display: none;
+    }
+
+    #container .btn-valid{
+        margin-top: 15%; 
+    }
+
+
+    /* LIST ANNONCE-pro */
+
+    .info-user{
+        width: 90%;
+        margin-left: 0;
+        margin: auto;
+        position: static;;
+        padding: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
+        background-color: rgb(221, 241, 253);
+    }
+
+    .container-list
+{
+    width:90%;
+    margin-left: 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border: 1px solid rgb(190, 190, 190);
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 20px;
+    box-shadow: 2px 2px 10px gray;
+}
+   
+
+    
+/***Formulaire annonce****/
+
+.content-line{
+    display:inline;
+}
+
+.container-form-annonce h1{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.container-form-annonce{
+    width: 90%;
+    margin: auto;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 20px;
+ }
+
+ .container-title{ 
+    width: 100%;
+    align-items: center;
+    border-right: none;
+    padding-top: 20px;
+ }
+
+ .container-end{
+    display: inline;
+}
+
+    
+}
+
+
+ 
+
+@media(max-width: 640px){
+    #container .type img{
+      height: 70px;
+    }
+
+    #container{
+        margin-left: 10px;
+    }
+
+}
+
