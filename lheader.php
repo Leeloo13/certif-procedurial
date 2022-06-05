@@ -38,6 +38,18 @@ require_once('config/bdd.php');
             </li>
         </ul>
 
+        <ul class = "menuAppear">
+            <li>
+                <a href="#">Acheter</a>
+            </li>
+            <li>
+                <a href="louer.php">Louer</a>
+            </li>
+            <li>
+                <a href="#">Vendre</a>
+            </li>
+        </ul>
+
         <ul class = "menu-link-user"> 
             <li>
                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">

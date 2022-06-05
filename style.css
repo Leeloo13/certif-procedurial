@@ -26,7 +26,7 @@ body{
     padding: 10px 0;
     position: fixed;
     align-items: center;
-    background-color: transparent;
+    background-color: white;
     margin-bottom: 150px;
 }
 
@@ -77,6 +77,10 @@ li a{
 }
 
 .identify{
+    display: none;
+}
+
+.menuAppear{
     display: none;
 }
 
@@ -425,12 +429,10 @@ h3{
 
     .menuAppear{background-color: bisque;
         position: absolute;
-        margin-top: 945px;
+        margin-top: 895px;
         width: 100%;
         flex-direction: column;
-        display: flex;
         height:100vh;
-        display: flex;
         justify-content: center;
         padding-bottom: 250px;
     }
