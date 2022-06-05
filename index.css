@@ -1,0 +1,13 @@
+body{
+    background-image: url(images/salon.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+
+@media(max-width: 940px){
+    body{
+        background-image: none !important;
+    }
+    
+}
